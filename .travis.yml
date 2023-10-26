@@ -6,7 +6,7 @@ serices:
   - docker 
 
 before_install:
-  - docker build -t docker-react -f Dockerfile.dev .
+  - docker build -t docker-react -f dockerfile.dev .
 
 script:
   - docker run -e CI=true docker-react npm run test
