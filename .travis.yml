@@ -12,7 +12,7 @@ script:
   - docker run -e CI=true docker-react npm run test
 
 deploy:
-  prodvider: elasticbeanstalk
+  provider: elasticbeanstalk
   region: "us-west-1"
   app: "docker-and-k8s-proj"
   env: "Docker-and-k8s-proj-env"
